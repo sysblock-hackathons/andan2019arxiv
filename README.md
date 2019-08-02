@@ -5,7 +5,8 @@
 * [Задачи для исследований](#Задачи-для-исследований)
 
 
-Кураторы: Олег Сериков, Даниил Скоринкин 
+Кураторы: Олег Сериков, Даниил Скоринкин
+
 Тенировочный подкорпус для ознакомления: [data_examples/arxiv_data_small.json](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask/blob/master/data_examples/arxiv_data_small.json)
 
 ## Тема
