@@ -1,7 +1,7 @@
 # Исследуем корпус научных статей Arxiv
 
 Кураторы: Олег Сериков, Даниил Скоринкин  
-Тренировочный подкорпус для ознакомления: [data_examples/arxiv_data_small.csv](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask/blob/master/data_examples/arxiv_data_small.csv)
+Тренировочный подкорпус для ознакомления: [data_examples/arxiv_data_small.csv](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask/blob/master/data_examples/arxiv_data_small.csv)  
 Полный корпус скачать: https://transfer.sh/I6fw7/arxiv_data_full.csv
 
 
