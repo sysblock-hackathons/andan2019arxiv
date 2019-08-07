@@ -1,7 +1,7 @@
 # Исследуем корпус научных статей Arxiv
 на хакатоне, [на АнДане, на Летней школе](https://letnyayashkola.org/andan/)
 
-**презентация результатов: [ссылка](https://docs.google.com/presentation/d/e/2PACX-1vRoOlAfA2eQ2_0XPdL30cxxz4tVRicYEUsgQDTDBswwt1K7MrH1Ub72BpUEDmzFdrrowtNBJ1aDFBHm/pub?start=false&loop=false&delayms=60000)**
+**🔥 презентация результатов: [ссылка](https://docs.google.com/presentation/d/e/2PACX-1vRoOlAfA2eQ2_0XPdL30cxxz4tVRicYEUsgQDTDBswwt1K7MrH1Ub72BpUEDmzFdrrowtNBJ1aDFBHm/pub?start=false&loop=false&delayms=60000)**
 
 Кураторы: Олег Сериков, Даниил Скоринкин  
 Тренировочный подкорпус для ознакомления: [data_examples/arxiv_data_small.csv](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask/blob/master/data_examples/arxiv_data_small.csv)  
