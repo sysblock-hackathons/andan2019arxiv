@@ -15,9 +15,9 @@ arxiv_full_df <- arxiv_full_df[!is.na(title)]
 
 head(arxiv_full_df$emails)
 
-#train separate emails into name and domain
-train_email <- as.data.table(read.csv('us-500.csv', stringsAsFactors = F))  # todo: что за файл us-500.csv
-separate(data=train_email, col=email, into = c('email_name', 'email_domain'), sep = '@')
+# #train separate emails into name and domain
+# train_email <- as.data.table(read.csv('us-500.csv', stringsAsFactors = F))
+# separate(data=train_email, col=email, into = c('email_name', 'email_domain'), sep = '@')
 
 #создаем колонку со списком тэгов
 tags=vector(length=nrow(arxiv_sample_df))
