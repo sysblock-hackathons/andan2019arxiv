@@ -1,11 +1,4 @@
 library(readr)
-edges <- read_csv("edges.csv")  # todo стрясти с олега код, пока из edges.csv
-authors <- read_csv("Authors.csv")  # todo откуда
-edges_weighted <- read_csv("edges_weighted_positive.csv")  # из edges_ctr.py ненулевые
-tags <- read_csv("pairwise_tags.csv")  # из paper_tags_and_coauthorship.r
-head(edges_weighted)
-edges_weighted <- na.omit(edges_weighted)
-
 library(igraph)
 library(tidytext)
 library(widyr)
@@ -14,6 +7,13 @@ library(ggplot2)
 library(ggraph)
 library(tnet)
 library(dplyr)
+
+edges <- read_csv("edges.csv")  # todo стрясти с олега код, пока из edges.csv
+# authors <- read_csv("Authors.csv")  # todo откуда
+edges_weighted <- read_csv("edges_weighted_positive.csv")  # из edges_ctr.py ненулевые
+tags <- read_csv("pairwise_tags.csv")  # из paper_tags_and_coauthorship.r
+head(edges_weighted)
+edges_weighted <- na.omit(edges_weighted)
 
 #сеть университетов - сотрудничество (попробовать взвешенные)
 tags <- tags %>% filter(freq >= 50)
@@ -105,23 +105,23 @@ visNetwork(nodes = g1$nodes, edges = g1$edges, height = "800px", width = "800px"
   visIgraphLayout()
 
 
-#сеть соавторства по авторам
-total10 = data.frame(
-  title = c(authors$title),
-  Author = c(authors$Author)
-)
+# #сеть соавторства по авторам
+# total10 = data.frame(
+#   title = c(authors$title),
+#   Author = c(authors$Author)
+# )
 
-g10 = graph_from_data_frame(total10, directed = FALSE)
-g10 = simplify(g10)
-V(g10)$type = bipartite_mapping(g10)$type
+# g10 = graph_from_data_frame(total10, directed = FALSE)
+# g10 = simplify(g10)
+# V(g10)$type = bipartite_mapping(g10)$type
 
-plot(g10)
+# plot(g10)
 
 
-g10.bp <- bipartite.projection(g10) 
+# g10.bp <- bipartite.projection(g10) 
 
-par(mfrow=c(1,2))
-plot(g10.bp$proj1, vertex.label.color="black", vertex.label=NA)
-     #vertex.label=nodes2$media[!is.na(nodes2$media.type)])
-plot(g10.bp$proj2, vertex.label.color="black", vertex.label=NA)
-     #vertex.label=nodes2$media[ is.na(nodes2$media.type)]) 
+# par(mfrow=c(1,2))
+# plot(g10.bp$proj1, vertex.label.color="black", vertex.label=NA)
+#      #vertex.label=nodes2$media[!is.na(nodes2$media.type)])
+# plot(g10.bp$proj2, vertex.label.color="black", vertex.label=NA)
+#      #vertex.label=nodes2$media[ is.na(nodes2$media.type)]) 
