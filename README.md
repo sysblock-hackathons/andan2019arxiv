@@ -10,7 +10,7 @@
 
 * [Тема](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask#тема)
 * [Описание корпуса](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask#Описание-корпуса)
-* [Исследовательские сценарии](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask#ЗИсследовательские-сценарии)
+* [Исследовательские сценарии](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask#Исследовательские-сценарии)
 
 
 ## Тема
