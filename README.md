@@ -5,7 +5,7 @@
 
 Кураторы: Олег Сериков, Даниил Скоринкин  
 Тренировочный подкорпус для ознакомления: [data_examples/arxiv_data_small.csv](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask/blob/master/data_examples/arxiv_data_small.csv)  
-Полный корпус скачать: https://transfer.sh/Ty5yp/arxiv_data_full.csv
+Полный корпус скачать: https://transfer.sh/Ty5yp/arxiv_data_full.csv **TODO:** выложить в долгосрочное хранилище, опубликовать код сбора корпуса
 
 
 * [Тема](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask#тема)
