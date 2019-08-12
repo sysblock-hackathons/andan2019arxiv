@@ -4,13 +4,13 @@
 **🔥 презентация результатов: [ссылка](https://docs.google.com/presentation/d/e/2PACX-1vRoOlAfA2eQ2_0XPdL30cxxz4tVRicYEUsgQDTDBswwt1K7MrH1Ub72BpUEDmzFdrrowtNBJ1aDFBHm/pub?start=false&loop=false&delayms=60000)**
 
 Кураторы: Олег Сериков, Даниил Скоринкин  
-Тренировочный подкорпус для ознакомления: [data_examples/arxiv_data_small.csv](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask/blob/master/data_examples/arxiv_data_small.csv)  
+Тренировочный подкорпус для ознакомления: [data_examples/arxiv_data_small.csv](https://github.com/sysblock-hackathons/andan2019arxiv/blob/master/data_examples/arxiv_data_small.csv)  
 Полный корпус скачать: https://drive.google.com/file/d/1_LtiAX2mO6H1xA-9goxzTwI9qopyDez9/view
 
 
-* [Тема](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask#тема)
-* [Описание корпуса](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask#Описание-корпуса)
-* [Исследовательские сценарии](https://github.com/andan2019sysblockhackathon-arxivtask/arxivTask#Исследовательские-сценарии)
+* [Тема](https://github.com/sysblock-hackathons/andan2019arxiv#тема)
+* [Описание корпуса](https://github.com/sysblock-hackathons/andan2019arxiv#Описание-корпуса)
+* [Исследовательские сценарии](https://github.com/sysblock-hackathons/andan2019arxiv#Исследовательские-сценарии)
 
 
 ## Тема
