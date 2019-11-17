@@ -7,8 +7,8 @@ library('ggplot2')
 install.packages('widyr')
 library('RColorBrewer')
 
-arxiv_full_df <- read.csv("arxiv_data_full.csv", stringsAsFactors = F)
-arxiv_sample_df <- read.csv("arxiv_data_small.csv", stringsAsFactors = F)
+arxiv_full_df <- read.csv("data_examples/arxiv_data_full.csv", stringsAsFactors = F)
+arxiv_sample_df <- read.csv("data_examples/arxiv_data_small.csv", stringsAsFactors = F)
 
 arxiv_full_df <- as.data.table(arxiv_full_df)
 arxiv_full_df <- arxiv_full_df[!is.na(title)]
@@ -46,8 +46,8 @@ for(i in 1:nrow(arxiv_sample_df)){
 arxiv_sample_df$emails_list=emails_list
 
 
-# arxiv_sample_df[,no_emails:=sapply(emails_list, function(x) length(x))]
-# unique(arxiv_sample_df$no_emails)
+arxiv_sample_df[,no_emails:=sapply(emails_list, function(x) length(x))]
+unique(arxiv_sample_df$no_emails)
 max(arxiv_sample_df$no_emails)
 
 #для каждого email из списка создаем свою колонку
@@ -59,37 +59,38 @@ arxiv_sample_df$emails[[86]]
 
 #меняем имена
 #for i in 1:max(arxiv_sample_df$no_emails){
-  setnames(arxiv_sample_df, '1', 'email01')
-  setnames(arxiv_sample_df, '2', 'email02')
-  setnames(arxiv_sample_df, '3', 'email03')
-  setnames(arxiv_sample_df, '4', 'email04')
-  setnames(arxiv_sample_df, '5', 'email05')
-  setnames(arxiv_sample_df, '6', 'email06')
-  setnames(arxiv_sample_df, '7', 'email07')
-  setnames(arxiv_sample_df, '8', 'email08')
-  setnames(arxiv_sample_df, '9', 'email09')
-  setnames(arxiv_sample_df, '10', 'email10')
-  setnames(arxiv_sample_df, '11', 'email11')
-  setnames(arxiv_sample_df, '12', 'email12')
-  setnames(arxiv_sample_df, '13', 'email14')
-  setnames(arxiv_sample_df, '14', 'email14')
-  setnames(arxiv_sample_df, '15', 'email15')
-  setnames(arxiv_sample_df, '16', 'email16')
+setnames(arxiv_sample_df, '1', 'email01')
+setnames(arxiv_sample_df, '2', 'email02')
+setnames(arxiv_sample_df, '3', 'email03')
+setnames(arxiv_sample_df, '4', 'email04')
+setnames(arxiv_sample_df, '5', 'email05')
+setnames(arxiv_sample_df, '6', 'email06')
+setnames(arxiv_sample_df, '7', 'email07')
+setnames(arxiv_sample_df, '8', 'email08')
+setnames(arxiv_sample_df, '9', 'email09')
+setnames(arxiv_sample_df, '10', 'email10')
+setnames(arxiv_sample_df, '11', 'email11')
+setnames(arxiv_sample_df, '12', 'email12')
+setnames(arxiv_sample_df, '13', 'email14')
+setnames(arxiv_sample_df, '14', 'email14')
+setnames(arxiv_sample_df, '15', 'email15')
+setnames(arxiv_sample_df, '16', 'email16')
 #}
 
 
-  View(unique(arxiv_sample_df$email01))
+View(unique(arxiv_sample_df$email01))
 
 
 class(arxiv_sample_df)
 
 
   
-vars_email <- grep('email', names(arxiv_sample_df), fixed=T, value=T)
+vars_email <- grep('email', names(arxiv_sample_df), fixed=T, value=T) %>% unique()
 View(vars_email)
-vars_email <- vars_email[3:18]
+vars_email <- vars_email[vars_email != "emails"]
 arxiv_sample_df <- as.data.table(arxiv_sample_df)
 cols <- c('id', 'names', vars_email)
+cols <- cols[!is.na(cols)]
 data_id_names_emails <- arxiv_sample_df[, .SD, .SDcol=cols]
 
 
